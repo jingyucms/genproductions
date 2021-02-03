@@ -1,7 +1,7 @@
 import os, sys
 
-#binning = "PtLL"
-binning = "inclusive"
+binning = "PtLL"
+#binning = "inclusive"
 
 if binning == "PtLL":
     bins = ["0to50", "50to150", "150to250", "250to400", "400to600", "600to800", "800to1200", "1200toInf"]
@@ -218,11 +218,11 @@ $DEFAULT_PDF_MEMBERS = reweight_PDF     ! if pdlabel=lhapdf, this is the lhapdf 
   0.0	= mmjj ! min invariant mass of a jet pair 
   0.0	= mmbb ! min invariant mass of a b pair 
   0.0	= mmaa ! min invariant mass of gamma gamma pair
-  10.0	= mmll ! min invariant mass of l+l- (same flavour) lepton pair
+  1.0	= mmll ! min invariant mass of l+l- (same flavour) lepton pair
   -1.0	= mmjjmax ! max invariant mass of a jet pair
   -1.0	= mmbbmax ! max invariant mass of a b pair
   -1.0	= mmaamax ! max invariant mass of gamma gamma pair
-  50.0	= mmllmax ! max invariant mass of l+l- (same flavour) lepton pair
+  10.0	= mmllmax ! max invariant mass of l+l- (same flavour) lepton pair
 #*********************************************************************
 # Minimum and maximum invariant mass for all letpons                 *
 #*********************************************************************
